@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title></title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/material.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/font-awesome.css" rel="stylesheet" />
+</head>
+<body>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
+    <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+            <span class="mdl-layout-title">Xaecia Client</span>
+        </div>
+        <div class="mdl-layout__tab-bar mdl-js-ripple-effect" id="lowerdiv">
+            <a href="#fixed-tab-1" class="mdl-layout__tab is-active">Projects</a>
+            <a href="#fixed-tab-2" class="mdl-layout__tab">Payment records</a>
+            <a href="#fixed-tab-3" class="mdl-layout__tab">Inquiries</a>
+        </div>
+    </header>
+
+    <div class="mdl-layout__drawer" id="sidepanel">
+        <center>
+            <img src="images/logo.png" id="logo"><br/>
+        </center>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <h5>Katende Ivan</h5>
+                Organisation: xaecia <br/>
+                Email: kigh143@gmail.com
+            </li>
+            <li id="diviber" class="list-group-item">Quick Navigation</li>
+            <li class="list-group-item"><a href="messages.html"><i class="fa fa-envelope"></i> Messages</a></li>
+            <li class="list-group-item"><a href="about.html"><i class="fa fa-globe"></i> About xaecia</a></li>
+            <li class="list-group-item" id="logout"><i class="fa fa-sign-out"></i>Logout</li>
+            
+        </ul>
+    </div>
+
+    <main class="mdl-layout__content">
+        <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
+            <div class="page-content">
+               <div class="panel panel-default" id="noborder">
+                    <div class="panel-heading"  id="topSectionbtn">
+                        <span class="pull-right btn btn-danger" id="closeForm"> <i class="fa fa-close"> Close</i></span>
+                        <span class="pull-right btn btn-success" id="createNew"> <i class="fa fa-plus"></i> Create New Project</span>
+                        <div id="clearboth"></div>
+                    </div>
+                    <div class="panel-body" id="projectsInfo">
+                        <div id="applicationForm">
+                            <p>Create a new project here !</p>
+                            <form id="projectForm">
+                                <input type="text" name="projectName" class="form-control" placeholder="project name" id="projectName" />
+                                <select class="form-control" id="projectType">
+                                    <option value="ma">Choose project type...</option>
+                                    <option value="ma">Mobile application</option>
+                                    <option value="ws">Website services </option>
+                                    <option value="dp">Desktop Application</option>
+                                    <option value="cp">Software Development</option>
+                                    <option value="gp">Graphics designing</option>
+                                    <option value="es">Embeded systems</option>
+                                </select>
+                                <textarea class="form-control" placeholder="Short description of project" name="description" id="description"></textarea>
+                                <input type="submit" name="createProject" value="create project" class="btn btn-primary pull-right" id="createProject" />
+                            </form>
+                            <div id="clearboth"></div>
+                        </div>
+                    </div>
+                    <div id="allProjects">   
+                            <div class="panel-group" id="faqAccordion" id="noborder">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question0">
+                                        <h4 class="panel-title">
+                                            <a href="#" class="ing">Project name</a>
+                                            <a href="#" class="ing pull-right" id="date">24 / Nov / 2016</a>
+                                        </h4>
+                                    </div>
+                                    <div id="question0" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <h5>Project type: Website </h5>
+                                            <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.
+                                            </p>
+                                            <hr/>
+                                            Progress
+                                        </div>
+                                    </div>
+                                </div>                               
+                            </div>  
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mdl-layout__tab-panel" id="fixed-tab-2">
+            <div class="page-content">
+                <div class="panel panel-default" id="noborder">
+                    <div class="panel-heading"  id="noborder">PENDING PAYMENTS</div>
+                    <div class="panel-body" id="paymentPending">
+                        <center> <i class="fa fa-file-code-o" id="nofile"></i> <br/> You have no running projects</center>
+                    </div>
+                </div>
+
+                <div class="panel panel-default"  id="noborder">
+                    <div class="panel-heading"  id="noborder">PAYMENT HISTORY</div>
+                    <div class="panel-body" id="paymenthistory">
+                         <center> <i class="fa fa-file-code-o" id="nofile"></i> <br/> You have no running projects</center>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="mdl-layout__tab-panel" id="fixed-tab-3">
+            <div class="page-content">                
+                <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__supporting-text">
+                        We are available at any time, contact us for any assistance and we shall be glad to provide the necessary help
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                       <p id="questionTag">Ask a question</p>
+                       <textarea class="form-control" placeholder="Type your question here.." id="question"></textarea>
+                       <button class="btn btn-primary pull-right" id="askbtn"> Ask Question</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="about">
+            <br/>
+                <div id="block">
+                    <h6><b>About xaecia client</b></h6>
+                    <p>
+                        Xaecia client is an avenue through which our clients get our sevices. Its admined at easing access to the xaecia team.
+                    </p> 
+                </div>
+                <div id="block">
+                    <h6><b>How to use xaecia client</b></h6>
+                    <p>
+                        Create a project by filling out the form. A project is anything  that you want xaecia to work on. 
+                        After that you can track progress on your application to ease time manngement. 
+                    </p>
+                </div>                
+            </div>
+           
+        </section>
+    </main>
+</div>
+    <script src="cordova.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/material.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

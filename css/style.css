@@ -1,0 +1,71 @@
+﻿.page-content{ padding:0px;  }
+#lowerdiv{ background: #fff !important; }
+#lowerdiv .mdl-layout__tab{ color:blue !important;  text-decoration: none; } 
+#lowerdiv .is-active{ color: #ff4081 !important; font-weight:bold;  }
+#createNew{ color:#fff; font-weight: bold; cursor: pointer; border-radius: 0px;  }
+#askbtn { border-radius: 0px; margin-top: 8px;   } 
+#question { border-radius: 0px; }
+/*input , select, textarea {   border-radius: 0px; } */
+#createProject{ border-radius: 0px; margin-top: 5px; }
+#closeForm { display: none; border-radius: 0px; }
+
+#description{border-radius: 0px;  margin-top: 5px; }
+#projectType{border-radius: 0px;  margin-top: 5px;}
+#projectName{border-radius: 0px; margin-top: 5px;}
+
+#projectsInfo{ padding:5px !important;   border:none ! important; }
+
+#applicationForm{ display: none;  background: #eef padding:5px; }
+
+#allProjects{ background: #fff;  padding: 4px; }
+
+
+#icon{ font-size: 40px; border-radius: 100%; font-weight: bold; padding:5px; }
+
+#project{ border: 1px solid #ccc; padding: 5px; margin:2px; border-radius: 5px; }
+
+#media-heading  { font-size: 19px; font-weight: bold; color:black; display: block; }
+#media-heading small { font-weight:lighter; color:#00bfff; }
+
+.media-body font { font-weight: lighter; color:#aaa; }
+#checked{ color:orange; }
+#about { padding: 10px; }
+#nofile{ font-size: 40px; color:#bbb; }
+#logo{ width: 90px; height: 90px;  }
+
+.demo-card-wide.mdl-card {
+width: 100%;
+}
+.demo-card-wide > .mdl-card__title {
+color: #fff;
+height: 160px;
+background: url('images/help.png') center / cover;
+}
+.demo-card-wide > .mdl-card__menu {
+color: #fff;
+}
+.demo-card-wide .mdl-card__supporting-text { width:100%; }
+
+#sidepanel{ padding: 0px; }
+
+#sidepanel center{background: #eef; border-bottom: 1px solid blue; }
+.list-group-item h5 { display: inline; }
+
+#diviber { background:#eee; color: #00bfff; } 
+
+#block { border-left:4px solid skyblue; padding-left:20px; margin: 5px; }
+
+#block h6 { display: inline; color:skyblue; }
+
+#date{ font-weight: bold; color:midnightblue; font-size: 13px; }
+
+#panel-title a { cursor: pointer; }
+
+#sendMessage { border-radius: 0px; width:100%; margin: 0px; } 
+
+#noborder{border-radius: 0px; border:none;}
+
+#topSectionbtn { border-radius: 0px; font-weight: bold;  background:#fff; padding: 0px; clear: both; }
+#clearboth { clear:both; } 
+
+#questionTag {color:orange; font-weight: bold;}

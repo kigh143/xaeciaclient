@@ -1,0 +1,81 @@
+
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>Sign Up | Bootstrap Based Admin Template - Material Design</title>
+    <!-- Favicon-->
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+<!--     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css"> -->
+
+    <!-- Bootstrap Core Css -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Waves Effect Css -->
+    <link href="css/waves.css" rel="stylesheet" />
+
+    <!-- Animation Css -->
+    <link href="css/animate.css" rel="stylesheet" />
+
+    <!-- Custom Css -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="container">
+    <div class="signup-box">
+        <div class="card">
+            <div class="body">
+                <form id="sign_up" method="POST">
+                	<center><img src="images/smaller.png" style="width:50px; height: 50px; margin-bottom: 10px;"></center>
+                    <div class="msg">Register a new membership</div>  <hr/>
+                    <div class="input-group">
+                        <div class="form-line">
+                            <input type="text" class="form-control" name="namesurname" placeholder="Full Name" required autofocus>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="form-line">
+                            <input type="email" class="form-control" name="email" placeholder="Email Address" required>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="form-line">
+                            <input type="text" class="form-control" name="password" minlength="6" placeholder="Organisation name" required>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="form-line">
+                            <input type="password" class="form-control" name="confirm" minlength="6" placeholder="Password" required>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-block btn-lg bg-blue waves-effect" type="submit">Sign Up</button>
+
+                    <div class="m-t-25 m-b--5 align-center">
+                        <a href="index.html">
+                        	You already have a membership?</a>
+                    </div>
+                    <hr/>
+                     <center>
+		                <div class="copyright">
+		                    &copy; 2016  xaecia<sup>&trade;</sup>
+		                </div>
+		            </center>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/waves.js"></script>
+    <script src="js/admin.js"></script>
+    <script src="js/pages/examples/sign-up.js"></script>
+</body>
+</html>

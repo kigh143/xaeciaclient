@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>Sign In | Bootstrap Based Admin Template - Material Design</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/waves.css" rel="stylesheet" />
+    <link href="css/animate.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+<div style="height:20px; "></div>
+<div class="container">
+    <div class="login-box">
+        <div class="card">
+            <div class="body">
+                <form id="sign_in" method="POST">
+                    <center><img src="images/smaller.png" style="width:50px; height: 50px; margin-bottom: 10px;"></center>
+                    <div class="msg">Sign in to start your session</div>
+                    <hr/>
+                    <div class="input-group">
+                        <div class="form-line">
+                            <input type="email" class="form-control" name="username" placeholder="User email " required autofocus>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        
+                        <div class="form-line">
+                            <input type="password" class="form-control" name="password" placeholder="Password" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-8 p-t-5">
+                            <input type="checkbox" name="rememberme" id="rememberme" class="filled-in chk-col-pink">
+                            <label for="rememberme">Remember Me</label>
+                        </div>
+                        <div class="col-xs-4">
+                            <button class="btn btn-block bg-blue waves-effect" type="submit">Sign In</button>
+                        </div>
+                    </div>
+                    <div class="row m-t-15 m-b--20">
+                        <div class="col-xs-6">
+                            <a href="signup.html">Register Now!</a>
+                        </div>
+                        <div class="col-xs-6 align-right">
+                            <a href="home.html">Forgot Password?</a>
+                        </div>
+                    </div>
+                    <hr/>
+                    <center>
+                        <div class="copyright">
+                              &copy; 2016  xaecia<sup>&trade;</sup>
+                        </div>
+                    </center>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="cordova.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/waves.js"></script>
+    <script src="js/admin.js"></script>
+    <script src="js/pages/examples/sign-in.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
